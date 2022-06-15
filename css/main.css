@@ -43,10 +43,10 @@ p {
 .wrapper {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
-.create {
-	margin-top: 160px;
+.create {	
 	width: 560px;
 }
 
@@ -101,7 +101,8 @@ p {
 }
 
 .future-list{
-	width: 300px;
+	width: 289px;
+	/*width: 300px;*/
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 400;
@@ -166,5 +167,98 @@ p {
 	font-size: 14px ;
 	text-align: center;
 	color: #fff;
+	margin: 0;
 }	
 
+/*Responsive*/
+
+/*992 px - 1200 px*/	
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+	.wrapper {
+        flex-direction: column;
+    }
+    .create{
+    	width: 100%;
+    } 
+    .intro {
+    	width: auto;
+    }  
+
+}
+
+/*768 px - 992 px*/	
+
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+
+}
+
+/*576 px - 768 px*/	
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+
+}
+
+/*320 px - 576 px*/	
+
+@media screen and (max-width: 576px) {
+	.container {
+		width: auto;
+	}
+
+	.logo {
+		margin-left: 10%;
+	   		
+	}
+
+
+	.title {
+		width: auto;
+		padding: 2%;
+		text-align: center;
+	}
+
+	.intro {
+		padding: 2%;
+		text-align: center;
+	}
+
+	.btn {
+		width: auto;
+		margin: 5%;
+	}
+
+	.baggage {
+		width: 320px;
+	}
+
+	.section-tittle{
+		width: auto;
+		padding: 2%;
+	}
+
+	.future-lists {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.input {
+		width: 90%;
+	}
+
+	
+	.btn-form {
+		width: 90%;
+		padding: 1em;
+	}
+  
+}
